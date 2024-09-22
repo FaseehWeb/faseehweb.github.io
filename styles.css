@@ -20,7 +20,7 @@ html, body {
     justify-content: center;
     align-items: center;
     border-radius: 16px;
-    border: 1px solid var(--subtext);
+    background-color: var(--div-bg);
     padding: 16px;
     color: var(--text);
 }

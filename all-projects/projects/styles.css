@@ -14,6 +14,10 @@ h1, h2, h3, p, ol, ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 6px;
+    background-color: var(--div-bg);
 }
 
 button {
@@ -51,8 +55,11 @@ button:hover {
 
 .download-btns-div {
     display: flex;
-    justify-content: right;
+    justify-content: space-around;
     gap: 6px;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: var(--div-bg);
 }
 
 video {

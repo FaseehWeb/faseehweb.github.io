@@ -1,4 +1,6 @@
 body {
+    margin: 0px;
+    padding: 0px;
     background-color: var(--body);
     color: var(--text);
 }
@@ -8,9 +10,11 @@ body {
     justify-content: center;
     align-items: center;
     padding: 5px;
+    margin: 0px;
     column-gap: 20px;
-    border-bottom: 1px solid var(--text);
     margin-bottom: 8px;
+    /* background-color: var(--div-bg); */
+    background: linear-gradient(to bottom, var(--body), var(--div-bg));
 }
 
 .title {
@@ -69,14 +73,14 @@ body {
     align-items: center;
     padding: 8px;
     gap: 6px;
-    border: 1px solid var(--subtext);
+    border: none;
     border-radius: 6px;
-    background-color: transparent;
-    transition: background-color 0.2s;
+    background-color: var(--div-bg);
+    transition: border 0.2s;
 }
 
 .download-item:hover {
-    background-color: var(--div-on-hover);
+    border: 1px solid var(--subtext);
 }
 
 .item-a {
@@ -95,6 +99,7 @@ body {
     width: 100%;
     height: auto;
     image-rendering: pixelated;
+    border-radius: 6px;
 }
 .item-img {
     width: 100%;
