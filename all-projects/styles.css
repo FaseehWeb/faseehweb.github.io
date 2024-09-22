@@ -1,14 +1,19 @@
 body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     margin: 0px;
     padding: 0px;
     background-color: var(--body);
     color: var(--text);
+    align-items: center;
 }
 
 .header {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
     padding: 5px;
     margin: 0px;
     column-gap: 20px;
@@ -55,14 +60,16 @@ body {
 
 .download-items {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    width: 100%;
+    max-width: 1080px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 10px;
     padding: 10px;
 }
  
-@media (max-width: 410px) { 
+@media (max-width: 600px) { 
     .download-items { 
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); 
     } 
 } 
  
@@ -94,6 +101,12 @@ body {
 .item-a:hover {
     text-decoration: underline;
 }
+
+@media (max-width: 600px) { 
+    .item-a { 
+        font-size: 16px; 
+    } 
+} 
 
 .item-img {
     width: 100%;
