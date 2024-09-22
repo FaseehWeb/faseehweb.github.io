@@ -23,6 +23,12 @@ html, body {
     background-color: var(--div-bg);
     padding: 16px;
     color: var(--text);
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 .welcome {
