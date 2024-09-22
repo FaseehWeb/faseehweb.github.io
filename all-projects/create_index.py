@@ -52,24 +52,21 @@ with open("index.html", 'w') as html_file:
 
         <div class='download-item'>
 ''')
-        path_to_video_file = os.path.join(subfolders_paths[i], "video.mp4")
-        if os.path.isfile(path_to_video_file):
+        path_to_svg_file = os.path.join(subfolders_paths[i], "img.svg")
+        if os.path.isfile(path_to_svg_file):
             html_file.write(f'''
-            <video class="item-video" autoplay muted loop>
-                <source data-src="{path_to_video_file}" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+            <img data-src="{path_to_svg_file}" alt="Icon." class="item-img">
 ''')
-            print(f"Added the video element for '{subfolders_names[i]}'.")
+            print(f"Added the icon element for '{subfolders_names[i]}'.")
         else:
-            print(f"Unable to find video.mp4 for '{subfolders_names[i]}'. Searching for img.jpg instead...")
-            path_to_img_file = os.path.join(subfolders_paths[i], "img.jpg")
-            if os.path.isfile(path_to_img_file):
-                html_file.write(f'            <img data-src="{path_to_img_file}" alt="Thumbnail." class="item-img">\n')
-                print("img.jpg file have been added.")
+            print(f"Unable to find img.svg for '{subfolders_names[i]}'. Searching for img.png instead...")
+            path_to_png_file = os.path.join(subfolders_paths[i], "img.png")
+            if os.path.isfile(path_to_png_file):
+                html_file.write(f'            <img data-src="{path_to_png_file}" alt="Thumbnail." class="item-img">\n')
+                print("img.png file have been added.")
             else:
-                print("img.jpg and video.mp4 not found.")
-                html_file.write(f'            <img data-src="assets/no_image.jpg" alt="No image available." class="item-img">\n')
+                print("img.svg and img.png not found.")
+                html_file.write(f'            <img data-src="assets/no_image.png" alt="No image available." class="item-img">\n')
         project_name = "Name Unavailable"
         try:
             with open(os.path.join(subfolders_paths[i], "name.txt"), 'r') as name_file:
