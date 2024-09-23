@@ -27,13 +27,12 @@ button {
     transition: background-color 0.1s;
 }
 button:hover {
-    background-color: var(--secondary);
-    color: var(--on-secondary);
+    background-color: var(--primary-on-hover);
 }
 
 .home-btn {
-    background-color: var(--secondary);
-    color: var(--on-secondary);
+    background-color: var(--primary);
+    color: var(--on-primary);
     border: none;
     border-radius: 999px;
     padding: 10px 20px;
@@ -41,13 +40,12 @@ button:hover {
     transition: background-color 0.1s;
 }
 
-.warning {
-    color: var(--error);
+.home-btn:hover {
+    background-color: var(--primary-on-hover);
 }
 
-.home-btn:hover {
-    background-color: var(--primary);
-    color: var(--on-primary);
+.warning {
+    color: var(--error);
 }
 
 .download-btns-div {

@@ -3,10 +3,9 @@
     --body: white;
     --primary-text: black;
     --secondary-text: rgb(82, 82, 82);
-    --primary: #6A994E;
+    --primary: #0c5586;
     --on-primary: white;
-    --secondary: #22577A;
-    --on-secondary: white;
+    --primary-on-hover: #0b314b;
     --error: #ff0000;
     
     --div-bg: #0000001e;
@@ -17,10 +16,9 @@
         --body: rgb(26, 26, 26);
         --primary-text: rgb(220, 220, 220);
         --secondary-text: rgb(173, 173, 173);
-        --primary: #587945;
+        --primary: #5b8641;
         --on-primary: white;
-        --secondary: #18415c;
-        --on-secondary: white;
+        --primary-on-hover: #76a75a;
         --error: #ff2a2a;
 
         --div-bg: #ffffff27;

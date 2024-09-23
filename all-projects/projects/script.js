@@ -1,5 +1,6 @@
+/* Load myVideo after the website is loaded. */
 window.addEventListener('load', function() {
     var video = document.getElementById('myVideo');
-    video.load(); // Start loading the video
-    video.play(); // Optionally, start playing the video
+    video.load();
+    video.play();
 });
