@@ -3,7 +3,7 @@ body {
     margin: 0 auto;
     padding: 16px;
     background-color: var(--body);
-    color: var(--text);
+    color: var(--primary-text);
 }
 
 h1, h2, h3, p, ol, ul {
@@ -17,8 +17,8 @@ h1, h2, h3, p, ol, ul {
 }
 
 button {
-    background-color: var(--primary-bg);
-    color: var(--primary-text);
+    background-color: var(--primary);
+    color: var(--on-primary);
     flex: 1;
     border: none;
     border-radius: 999px;
@@ -27,13 +27,13 @@ button {
     transition: background-color 0.1s;
 }
 button:hover {
-    background-color: var(--secondary-bg);
-    color: var(--secondary-text);
+    background-color: var(--secondary);
+    color: var(--on-secondary);
 }
 
 .home-btn {
-    background-color: var(--secondary-bg);
-    color: var(--secondary-text);
+    background-color: var(--secondary);
+    color: var(--on-secondary);
     border: none;
     border-radius: 999px;
     padding: 10px 20px;
@@ -46,8 +46,8 @@ button:hover {
 }
 
 .home-btn:hover {
-    background-color: var(--primary-bg);
-    color: var(--primary-text);
+    background-color: var(--primary);
+    color: var(--on-primary);
 }
 
 .download-btns-div {

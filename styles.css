@@ -22,7 +22,7 @@ html, body {
     border-radius: 16px;
     background-color: var(--div-bg);
     padding: 16px;
-    color: var(--text);
+    color: var(--primary-text);
     animation: fadeIn 0.5s ease-in;
 }
 
@@ -45,13 +45,13 @@ html, body {
         flex-direction: column;
     }
     .welcome {
-        border-bottom: 1px solid var(--text);
+        border-bottom: 1px solid var(--primary-text);
     }
 }
 
 .projects-btn {
-    background-color: var(--primary-bg);
-    color: var(--primary-text);
+    background-color: var(--primary);
+    color: var(--on-primary);
     font-size: 36px;
     border: none;
     border-radius: 1024px;
@@ -63,12 +63,12 @@ html, body {
     transition: background-color 0.1s;
 }
 .projects-btn:hover {
-    background-color: var(--secondary-bg);
+    background-color: var(--secondary);
 }
 
 .notes-btn {
-    background-color: var(--secondary-bg);
-    color: var(--secondary-text);
+    background-color: var(--secondary);
+    color: var(--on-secondary);
     font-size: 36px;
     border: none;
     border-radius: 1024px;
@@ -80,5 +80,5 @@ html, body {
     transition: background-color 0.1s;
 }
 .notes-btn:hover {
-    background-color: var(--primary-bg);
+    background-color: var(--primary);
 }

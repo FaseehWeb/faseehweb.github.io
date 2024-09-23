@@ -5,7 +5,7 @@ body {
     margin: 0px;
     padding: 0px;
     background-color: var(--body);
-    color: var(--text);
+    color: var(--primary-text);
     align-items: center;
 }
 
@@ -31,28 +31,28 @@ body {
 .home-btn {
     font-size: 24px;
     padding: 16px;
-    color: var(--secondary-text);
-    background-color: var(--secondary-bg);
+    color: var(--on-secondary);
+    background-color: var(--secondary);
     border: none;
     border-radius: 999px;
     transition: background-color 0.1s;
     transition: color 0.1s;
 }
 .home-btn:hover {
-    background: var(--primary-bg);
+    background: var(--primary);
 }
 
 .license-text {
     font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    color: var(--subtext);
+    color: var(--secondary-text);
     margin-top: 0px;
     margin-bottom: 8px;
 }
 
 .license-link {
-    color: var(--primary-bg);
+    color: var(--primary);
     margin-top: 0px;
     margin-bottom: 8px;
 }
@@ -81,7 +81,7 @@ body {
 }
 
 .download-item:hover {
-    border: 1px solid var(--subtext);
+    border: 1px solid var(--secondary-text);
 }
 
 .item-a {
@@ -89,7 +89,7 @@ body {
     font-size: 24px;
     font-weight: bold;
     text-align: center;
-    color: var(--text);
+    color: var(--primary-text);
     text-decoration: none;
 }
 .item-a:hover {
